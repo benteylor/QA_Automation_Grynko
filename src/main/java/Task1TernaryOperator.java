@@ -1,14 +1,29 @@
 import java.util.Scanner;
-
-public class Task_1_Ternary_Operator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public class Task1TernaryOperator {
+    public static void main(String[] args)
+    /* это стандартный метод main, который является точкой входа для выполнения программы.
+    public: Это ключевое слово, которое означает, что метод main является открытым и может быть доступным из других классов.
+    static: Это ключевое слово, указывающее, что метод main является статическим, что позволяет вызывать его без создания
+    экземпляра класса.
+    void: Это ключевое слово, обозначающее, что метод main не возвращает никакого значения.
+    main: Это имя метода. В Java, метод main является точкой входа для выполнения программы.
+    String[] args: Это параметр метода main, который представляет собой массив строк. Параметр args предназначен для
+    передачи аргументов командной строки в программу. */
+    {
+        Scanner scanner = new Scanner(System.in); /*в Java используется для создания объекта Scanner, который позволяет
+        вам читать данные из стандартного ввода (клавиатура) или из других источников. В данном случае, System.in означает
+        стандартный ввод (стандартный поток ввода). При использовании этой конструкции, вы создаете объект Scanner,
+        который будет читать данные из консоли. */
         System.out.print("Enter the first number: ");
         int number1 = scanner.nextInt();
         System.out.print("Enter the second number: ");
         int number2 = scanner.nextInt();
 
-        int smallerNumber = (number1 < number2) ? number1 : number2;
+        int smallerNumber = (number1 < number2) ? number1 : number2; /* В Java также известен как условный (тернарный оператор)
+        оператор. Он предоставляет компактный способ написания условных выражений
+        условие - логическое выражение, которое вычисляется как true или false.
+        int number1 - возвращается, если условие истинно.
+        int number2 - возвращается, если условие ложно.*/
         System.out.println("Smaller Number is: " + smallerNumber);
         scanner.close();
     }
